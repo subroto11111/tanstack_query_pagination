@@ -53,9 +53,7 @@ function App() {
 
   return (
     <Container maxWidth="xl" sx={mainContainerStyles}>
-      <Typography variant="h4" component="h1" gutterBottom sx={titleStyles}>
-        Students ({studentsData?.length || 0})
-      </Typography>
+
 
       <Grid container spacing={4}>
         {studentsData?.data?.map((student) => (
