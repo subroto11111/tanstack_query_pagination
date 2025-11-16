@@ -9,7 +9,8 @@ import {
   CircularProgress,
   Alert,
   Button,
-  Stack
+  Stack,
+  Pagination
 } from '@mui/material';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import axios from 'axios';
@@ -75,22 +76,8 @@ function App() {
           </Grid>
         ))}
       </Grid>
-      <Stack direction={"row"} justifyContent="space-between">
-        <Button disabled={studentsData.prev === null} onClick={() => {
-          if (studentsData.prev !== null) {
-            setPage(page - 1);
-          }
-        }} variant="contained" color="primary" sx={{ mt: 4 }}>
-          Previous
-        </Button>
-        <Button disabled={studentsData.next === null || isFetching} loading={isFetching} onClick={() => {
-          if (studentsData.next !== null) {
-            setPage(page + 1);
-          }
-        }} variant="contained" color="primary" sx={{ mt: 4 }}>
-          Next
-        </Button>
-      </Stack>
+      <Pagination sx={{ display: "flex", justifyContent: "center", my: 5 }} count={studentsData?.pages} page={page} onChange={(event, value) => setPage(value)} color="secondary" />
+
     </Container>
   );
 }
