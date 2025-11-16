@@ -27,7 +27,7 @@ const fetchStudents = async ({ queryKey }) => {
 function App() {
   const [page, setPage] = useState(1);
   const [perPage, setPerPage] = useState(8);
-  const { data: studentsData, isLoading, error, refetch, isFetching } = useQuery({
+  const { data: studentsData, isLoading, error, refetch, isFetching, isPlaceholderData } = useQuery({
     queryKey: ['students', page, perPage],
     queryFn: fetchStudents,
     placeholderData: keepPreviousData
@@ -50,7 +50,6 @@ function App() {
       </Container>
     );
   }
-
   return (
     <Container maxWidth="xl" sx={mainContainerStyles}>
 
@@ -77,7 +76,7 @@ function App() {
         ))}
       </Grid>
       <Stack direction={"row"} justifyContent="space-between">
-        <Button disabled={studentsData.prev === null || isFetching} loading={isFetching} onClick={() => {
+        <Button disabled={studentsData.prev === null} onClick={() => {
           if (studentsData.prev !== null) {
             setPage(page - 1);
           }
