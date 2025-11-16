@@ -1,0 +1,604 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "description": "Computer Science student with a passion for web development and programming.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "description": "Engineering student interested in robotics and artificial intelligence.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 3,
+      "name": "Carol Davis",
+      "description": "Business administration student focusing on marketing and entrepreneurship.",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 4,
+      "name": "David Wilson",
+      "description": "Medical student dedicated to healthcare and helping others in need.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 5,
+      "name": "Eva Brown",
+      "description": "Arts student specializing in digital design and creative media.",
+      "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 6,
+      "name": "Frank Miller",
+      "description": "Physics student researching quantum mechanics and theoretical physics.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 7,
+      "name": "Grace Lee",
+      "description": "Psychology student studying human behavior and mental health.",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 8,
+      "name": "Henry Taylor",
+      "description": "Mathematics student exploring advanced calculus and statistics.",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 9,
+      "name": "Isabella Garcia",
+      "description": "Chemistry student passionate about molecular research and lab experiments.",
+      "avatar": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 10,
+      "name": "Jack Thompson",
+      "description": "Biology student interested in genetics and environmental conservation.",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 11,
+      "name": "Katherine White",
+      "description": "Literature student with expertise in creative writing and poetry.",
+      "avatar": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 12,
+      "name": "Liam Rodriguez",
+      "description": "History student specializing in ancient civilizations and archaeology.",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 13,
+      "name": "Maya Patel",
+      "description": "Philosophy student exploring ethics and contemporary philosophical debates.",
+      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 14,
+      "name": "Nathan Clark",
+      "description": "Economics student analyzing market trends and financial systems.",
+      "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 15,
+      "name": "Olivia Martinez",
+      "description": "Environmental Science student working on climate change solutions.",
+      "avatar": "https://images.unsplash.com/photo-1546967191-fdfb13ed6b1e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 16,
+      "name": "Peter Anderson",
+      "description": "Architecture student designing sustainable and innovative buildings.",
+      "avatar": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 17,
+      "name": "Quinn Murphy",
+      "description": "Sociology student researching social movements and cultural dynamics.",
+      "avatar": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 18,
+      "name": "Rachel Kim",
+      "description": "Political Science student interested in international relations and policy.",
+      "avatar": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 19,
+      "name": "Samuel Johnson",
+      "description": "Statistics student working with big data and machine learning algorithms.",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 20,
+      "name": "Tara Wilson",
+      "description": "Journalism student covering campus events and social justice issues.",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 21,
+      "name": "Ulrich Berg",
+      "description": "Mechanical Engineering student focusing on renewable energy systems.",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 22,
+      "name": "Victoria Chen",
+      "description": "Biomedical Engineering student developing medical devices and prosthetics.",
+      "avatar": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 23,
+      "name": "William Foster",
+      "description": "Music student composing original pieces and studying classical theory.",
+      "avatar": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 24,
+      "name": "Ximena Lopez",
+      "description": "Anthropology student examining cultural practices and human evolution.",
+      "avatar": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 25,
+      "name": "Yuki Tanaka",
+      "description": "Neuroscience student researching brain function and cognitive disorders.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 26,
+      "name": "Zachary Brown",
+      "description": "Film Studies student creating documentaries and short films.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 27,
+      "name": "Amelia Scott",
+      "description": "Astronomy student studying stellar formation and galaxy evolution.",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 28,
+      "name": "Benjamin Hayes",
+      "description": "Electrical Engineering student working on circuit design and automation.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 29,
+      "name": "Chloe Turner",
+      "description": "Graphic Design student creating digital art and brand identities.",
+      "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 30,
+      "name": "Daniel Park",
+      "description": "Software Engineering student developing mobile applications and games.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 31,
+      "name": "Emma Roberts",
+      "description": "Criminal Justice student studying law enforcement and legal systems.",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 32,
+      "name": "Felix Wagner",
+      "description": "Marine Biology student exploring ocean ecosystems and conservation.",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 33,
+      "name": "Gabriella Silva",
+      "description": "Public Health student working on community wellness programs.",
+      "avatar": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 34,
+      "name": "Hassan Ali",
+      "description": "Information Technology student specializing in cybersecurity and networks.",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 35,
+      "name": "Iris Cooper",
+      "description": "Theater Arts student performing in plays and studying dramatic literature.",
+      "avatar": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 36,
+      "name": "Jason Rivera",
+      "description": "Agricultural Science student researching sustainable farming practices.",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 37,
+      "name": "Kendra Walsh",
+      "description": "International Business student analyzing global market strategies.",
+      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 38,
+      "name": "Lucas Mitchell",
+      "description": "Civil Engineering student designing infrastructure and transportation systems.",
+      "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 39,
+      "name": "Mia Edwards",
+      "description": "Nutrition Science student promoting healthy eating and lifestyle choices.",
+      "avatar": "https://images.unsplash.com/photo-1546967191-fdfb13ed6b1e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 40,
+      "name": "Noah Campbell",
+      "description": "Game Design student creating interactive entertainment and virtual worlds.",
+      "avatar": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 41,
+      "name": "Penelope Reed",
+      "description": "Fashion Design student creating sustainable and innovative clothing lines.",
+      "avatar": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 42,
+      "name": "Quincy Baker",
+      "description": "Urban Planning student designing livable and sustainable city spaces.",
+      "avatar": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 43,
+      "name": "Ruby Collins",
+      "description": "Data Science student analyzing patterns in large datasets and AI.",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 44,
+      "name": "Sebastian Torres",
+      "description": "Sports Management student organizing athletic events and programs.",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 45,
+      "name": "Thea Morgan",
+      "description": "Photography student capturing moments and exploring visual storytelling.",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 46,
+      "name": "Vincent Gray",
+      "description": "Geology student studying earth processes and mineral formations.",
+      "avatar": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 47,
+      "name": "Wendy Hughes",
+      "description": "Social Work student advocating for vulnerable populations and communities.",
+      "avatar": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 48,
+      "name": "Xavier King",
+      "description": "Robotics Engineering student building autonomous systems and AI robots.",
+      "avatar": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 49,
+      "name": "Yasmin Ahmed",
+      "description": "Pharmaceutical Sciences student developing new medications and treatments.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 50,
+      "name": "Zoe Peterson",
+      "description": "Veterinary Medicine student caring for animals and studying animal health.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 51,
+      "name": "Aaron Bell",
+      "description": "Aerospace Engineering student designing aircraft and space exploration systems.",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 52,
+      "name": "Bella Ward",
+      "description": "Interior Design student creating functional and aesthetic living spaces.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 53,
+      "name": "Connor Ross",
+      "description": "Materials Science student researching advanced composites and nanotechnology.",
+      "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 54,
+      "name": "Diana Powell",
+      "description": "Education student preparing to teach elementary school mathematics.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 55,
+      "name": "Ethan Wright",
+      "description": "Chemical Engineering student optimizing industrial processes and reactions.",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 56,
+      "name": "Fiona Stewart",
+      "description": "Linguistics student analyzing language evolution and communication patterns.",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 57,
+      "name": "Gabriel Sanders",
+      "description": "Industrial Design student creating user-friendly products and interfaces.",
+      "avatar": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 58,
+      "name": "Hannah Price",
+      "description": "Renewable Energy student developing solar and wind power solutions.",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 59,
+      "name": "Ian Barnes",
+      "description": "Cognitive Science student exploring the intersection of mind and technology.",
+      "avatar": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 60,
+      "name": "Jenna Cox",
+      "description": "Hospitality Management student planning events and managing tourism services.",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 61,
+      "name": "Kyle Ward",
+      "description": "Forensic Science student analyzing evidence and solving criminal cases.",
+      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 62,
+      "name": "Luna Flores",
+      "description": "Art History student researching cultural movements and artistic expressions.",
+      "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 63,
+      "name": "Marcus Jenkins",
+      "description": "Supply Chain Management student optimizing logistics and distribution networks.",
+      "avatar": "https://images.unsplash.com/photo-1546967191-fdfb13ed6b1e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 64,
+      "name": "Nora Butler",
+      "description": "Public Relations student managing communications and brand reputation.",
+      "avatar": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 65,
+      "name": "Oscar Lee",
+      "description": "Bioengineering student developing medical technologies and tissue engineering.",
+      "avatar": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 66,
+      "name": "Paula Green",
+      "description": "Digital Marketing student creating online campaigns and social media strategies.",
+      "avatar": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 67,
+      "name": "Quinton Adams",
+      "description": "Exercise Science student promoting fitness and athletic performance optimization.",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 68,
+      "name": "Rita Nelson",
+      "description": "Library Science student organizing information systems and digital archives.",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 69,
+      "name": "Simon Carter",
+      "description": "Meteorology student forecasting weather patterns and climate phenomena.",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=race"
+    },
+    {
+      "id": 70,
+      "name": "Tina Phillips",
+      "description": "Occupational Therapy student helping people recover and adapt to disabilities.",
+      "avatar": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 71,
+      "name": "Ulysses Evans",
+      "description": "Nanotechnology student manipulating matter at the molecular level.",
+      "avatar": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 72,
+      "name": "Violet Parker",
+      "description": "Dance student choreographing performances and studying movement therapy.",
+      "avatar": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 73,
+      "name": "Walter Wood",
+      "description": "Fisheries Science student managing aquatic resources and marine conservation.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 74,
+      "name": "Xara Cruz",
+      "description": "Space Science student studying planetary systems and astronomical phenomena.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 75,
+      "name": "Yolanda Rivera",
+      "description": "Culinary Arts student creating innovative dishes and studying food science.",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 76,
+      "name": "Zander Moore",
+      "description": "Video Game Development student programming interactive entertainment systems.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 77,
+      "name": "Aria Jackson",
+      "description": "Optometry student specializing in vision care and eye health diagnostics.",
+      "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 78,
+      "name": "Blake Cooper",
+      "description": "Renewable Resources student developing sustainable energy and materials.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 79,
+      "name": "Clara Peterson",
+      "description": "Genetic Counseling student helping families understand inherited conditions.",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 80,
+      "name": "Diego Sanchez",
+      "description": "Cybersecurity student protecting digital systems from threats and attacks.",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 81,
+      "name": "Elena Martinez",
+      "description": "Atmospheric Science student researching weather patterns and climate change.",
+      "avatar": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 82,
+      "name": "Flynn Richardson",
+      "description": "Human Resources student managing workplace relations and organizational behavior.",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 83,
+      "name": "Giselle Watson",
+      "description": "Textile Engineering student developing innovative fabrics and materials.",
+      "avatar": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 84,
+      "name": "Hugo Bennett",
+      "description": "Quantum Physics student exploring the fundamental nature of reality.",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 85,
+      "name": "Ivy Coleman",
+      "description": "Speech Pathology student helping people overcome communication disorders.",
+      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 86,
+      "name": "Jaxon Russell",
+      "description": "Energy Engineering student optimizing power generation and distribution systems.",
+      "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 87,
+      "name": "Kira Griffin",
+      "description": "Biostatistics student analyzing health data and medical research trends.",
+      "avatar": "https://images.unsplash.com/photo-1546967191-fdfb13ed6b1e?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 88,
+      "name": "Leo Diaz",
+      "description": "Packaging Science student designing sustainable and efficient product containers.",
+      "avatar": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 89,
+      "name": "Mona Perry",
+      "description": "Nuclear Engineering student working on clean energy and reactor safety.",
+      "avatar": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 90,
+      "name": "Nico Washington",
+      "description": "Biomechanics student studying human movement and prosthetic design.",
+      "avatar": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 91,
+      "name": "Ophelia Long",
+      "description": "Conservation Biology student protecting endangered species and ecosystems.",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 92,
+      "name": "Phoenix Butler",
+      "description": "Artificial Intelligence student developing machine learning algorithms.",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 93,
+      "name": "Quinley Torres",
+      "description": "Fire Protection Engineering student designing safety systems for buildings.",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 94,
+      "name": "Raven Hughes",
+      "description": "Disaster Management student preparing communities for natural emergencies.",
+      "avatar": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 95,
+      "name": "Sage Mitchell",
+      "description": "Sustainable Architecture student creating eco-friendly building designs.",
+      "avatar": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 96,
+      "name": "Titan Rodriguez",
+      "description": "Ocean Engineering student developing underwater technologies and systems.",
+      "avatar": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 97,
+      "name": "Una Foster",
+      "description": "Paleontology student studying fossils and ancient life forms.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 98,
+      "name": "Vega Price",
+      "description": "Sustainable Development student working on global environmental solutions.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 99,
+      "name": "Wade Kelly",
+      "description": "Systems Engineering student integrating complex technological solutions.",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    {
+      "id": 100,
+      "name": "Xyla Morgan",
+      "description": "Biomedical Informatics student managing health data and medical records.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    }
+  ]
+}
