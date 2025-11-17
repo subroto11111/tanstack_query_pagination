@@ -11,26 +11,45 @@ import {
   Button,
   Stack
 } from '@mui/material';
-import { keepPreviousData, useQuery } from '@tanstack/react-query';
+import { useInfiniteQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-const fetchStudents = async ({ queryKey }) => {
+/**
+ * Minimal change: fetchStudents now accepts { pageParam } and uses it as cursor.
+ */
+const fetchStudents = async ({ pageParam = 0 }) => {
   const response = await axios.get('http://localhost:4000/api/students', {
     params: {
-      cursor: queryKey[1],
+      cursor: pageParam,
     }
   });
-  return response.data;
+  return response.data; // { data: [...], nextCursor: <num|null>, hasMore: boolean }
 };
 
 function App() {
-  const [cursor, setCursor] = useState(0);
-  const { data: studentsData, isLoading, error, refetch, isFetching, isPlaceholderData } = useQuery({
-    queryKey: ['students', cursor],
+
+  const {
+    data: studentsData,
+    isLoading,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+    isFetching,
+    status
+  } = useInfiniteQuery({
+    queryKey: ['students'],
     queryFn: fetchStudents,
-    placeholderData: keepPreviousData
+    initialPageParam: 0,
+    getNextPageParam: (lastPage) => {
+      console.log("lastpage", lastPage)
+      return lastPage.nextCursor ?? undefined
+    }
   });
   console.log(studentsData)
+  // flatten pages into a single array while preserving append behavior
+  const students = studentsData?.pages?.flatMap(p => p.data) ?? [];
+
   if (isLoading) {
     return (
       <Container maxWidth="xl" sx={loadingContainerStyles}>
@@ -39,21 +58,21 @@ function App() {
     );
   }
 
-  if (error) {
+  if (status === 'error') {
     return (
       <Container maxWidth="xl" sx={errorContainerStyles}>
         <Alert severity="error">
-          Failed to load students: {error.message}
+          Failed to load students: {error?.message}
         </Alert>
       </Container>
     );
   }
+
   return (
     <Container maxWidth="xl" sx={mainContainerStyles}>
 
-
       <Grid container spacing={4}>
-        {studentsData?.data?.map((student) => (
+        {students.map((student) => (
           <Grid size={{ xs: 12, sm: 6, md: 3 }} key={student.id}>
             <Card sx={cardStyles}>
               <CardContent sx={cardContentStyles}>
@@ -62,7 +81,7 @@ function App() {
                 </Avatar>
 
                 <Typography variant="h6" gutterBottom sx={nameStyles}>
-                  {student.name}
+                  #{student.id}  {student.name}
                 </Typography>
 
                 <Typography variant="body2" color="text.secondary" sx={descriptionStyles}>
@@ -73,15 +92,17 @@ function App() {
           </Grid>
         ))}
       </Grid>
-      <Stack direction={"row"} justifyContent="center" alignItems="center">
-        <Button disabled={studentsData.hasMore === false} onClick={() => {
-          if (studentsData.hasMore) {
-            setCursor(studentsData.nextCursor);
-          }
-        }} variant="contained" color="primary" sx={{ mt: 4 }}>
-          Load More
-        </Button>
 
+      <Stack direction={"row"} justifyContent="center" alignItems="center">
+        <Button
+          disabled={!hasNextPage || isFetchingNextPage}
+          onClick={() => fetchNextPage()}
+          variant="contained"
+          color="primary"
+          sx={{ mt: 4 }}
+        >
+          {isFetchingNextPage ? 'Loading...' : hasNextPage ? 'Load More' : 'No more'}
+        </Button>
       </Stack>
     </Container>
   );
@@ -143,4 +164,4 @@ const descriptionStyles = {
   fontSize: '0.875rem'
 };
 
-export default App
+export default App;
